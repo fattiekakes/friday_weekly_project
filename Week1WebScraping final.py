@@ -55,6 +55,7 @@ def scrape_tiki(url="https://tiki.vn/dien-thoai-may-tinh-bang/c1789?_lc=Vk4wMzkw
     return data
 
 # Scolling to different pages
+
 result = []
 from time import sleep
 duration = 2
@@ -67,4 +68,4 @@ for i in range(10):
 # Print out
 import pandas as pd
 
-print(pd.DataFrame(data = result, columns = result[0].keys()))
+pd.DataFrame(data = result, columns = result[0].keys())
